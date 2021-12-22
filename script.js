@@ -29,11 +29,10 @@ function FullTimeFormat(clock) {
     this.clock.addEventListener('click', () => this.clock.classList.toggle('isShort'));
 }
 
-let time = document.getElementById('clockBlock');
 let shortTimeBlock = document.getElementById('short-time');
 let fullTimeBlock = document.getElementById('full-time');
 
-let clock = new Clock(time);
+let clock = new Clock();
 ShortTimeFormat.prototype = Object.create(Clock.prototype);
 FullTimeFormat.prototype = Object.create(Clock.prototype);
 
